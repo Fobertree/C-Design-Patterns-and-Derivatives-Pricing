@@ -52,7 +52,7 @@ Monte Carlo approximates this expected value by relying the Law of Large Numbers
 
 - Draw upon random variable x from $N(0,1)$ gaussian distribution using Box-Muller transform
 - Use the x to compute $f(S_0 e^{(r-\frac{1}{2}\sigma^2)t + \sigma \sqrt{T} x})$ (plug into the distribution)\
-  - Where $f(S) = (S-K)_+$ \
+  - Where $f(S) = (S-K)_+$
     - $(+$ subscript means $max(S-K,0))$
 - Repeat many times then take the average
 - Multiply the average by $e^{-rT}$ (discount to P.V.)
