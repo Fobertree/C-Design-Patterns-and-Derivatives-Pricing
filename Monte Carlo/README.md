@@ -9,11 +9,11 @@ $dS_t = \mu S_t dt + \sigma S_t dW_t$
 
 **Black Scholes**\
 Riskless bond $B$ growing at continuously compounding rate $r$. Given a vanilla option with expiry $T$ and pay-off $f$, is equal to:\
-$e^{-rT} E(f(S_T))$ (2)
+$e^{-rT} E(f(S_T))$ (Eq. 2)
 
 - We are discounting the strike price to present value ($e^{-rT}$) while $f(S_T)$ is the underlying asset at expiration (reminder Black Scholes is based on European options, can only exercise at expiration)
 
-**Risk-neutral process (SDE but at lowest return we'll take)**
+**Risk-neutral process (SDE but at lowest return we'll take)**\
 $dS_t = rS_t dt + \sigma S_t dW_t $
 
 **Pass into log and use Ito's lemma**
@@ -25,11 +25,11 @@ $dS_t = rS_t dt + \sigma S_t dW_t $
 
 $log S_t = (r-\frac{1}{2}\sigma^2)t + \sigma W_t$
 
-Since $W_t$ is a Brownian motion, $W_T$ is a Gaussian distrubtion, with mean $0$ and variance $T$
+Since $W_t$ is a Brownian motion, $W_T$ is a Gaussian distribution, with mean $0$ and variance $T$
 
 - $W_T = \sqrt{T} N(0,1)$
 
-Plug it back into $W_T$
+Plug it back into $W_t$
 
 $log S_t = log S_0 + (r-\frac{1}{2}\sigma^2)t + \sigma \sqrt{T} N(0,1)$
 
